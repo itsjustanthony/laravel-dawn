@@ -1,0 +1,29 @@
+{
+  "name" : "itsjustanthony/laravel-dawn",
+  "description" : "Extends the Laravel Dusk command to enable server defined $APP_ENV variable",
+  "keywords": ["dusk", "laravel", "testing", "webdriver"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Anthony Corbelli",
+      "email": "anthony@itsjustanthony.com"
+    }
+  ],
+  "require-dev": {
+    "laravel/dusk": "@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "itsjustanthony\\Laravel\\Dawn\\": "src/itsjustanthony/Laravel/Dawn"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "itsjustanthony\\Laravel\\Dawn\\Providers\\DawnConsoleProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
